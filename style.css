@@ -1,0 +1,268 @@
+body {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.961);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 33%);
+  gap: 5px;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+#flash:hover {
+  animation: flash;
+  animation-duration: 1.5s;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Candles */
+.one {
+  grid-area: span 1 / span 2;
+}
+
+/* Moon */
+.two {
+  grid-area: span 1 / span 1;
+}
+
+/* House */
+.three {
+  grid-area: span 1 / span 2;
+}
+
+/* Mask */
+.four {
+  grid-area: span 1 / span 3;
+}
+
+/* Summon */
+.five {
+  grid-area: span 1 / span 1;
+}
+
+/* Skeletons */
+.six {
+  grid-area: span 1 / span 3;
+}
+
+/* Makeup */
+.seven {
+  grid-area: span 1 / span 2;
+}
+
+/* Lantern */
+.eight {
+  grid-area: span 1 / span 2;
+}
+
+/* Pumpkin head */
+.nine {
+  grid-area: span 1 / span 2;
+}
+
+/* Ghost */
+.ten {
+  grid-area: span 1 / span 1;
+}
+
+/* Scary */
+.eleven {
+  grid-area: span 1 / span 1;
+}
+
+/* Rat */
+.twelve {
+  grid-area: span 1 / span 2;
+}
+
+/* Dead  */
+.thirteen {
+  grid-area: span 1 / span 2;
+}
+
+/* Tablet mode */
+@media screen and (max-width: 1024px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Candles */
+  .one {
+    grid-area: span 1 / span 3;
+  }
+
+  /* Moon  */
+  .two {
+    grid-area: span 1 / span 1;
+  }
+
+  /* House */
+  .three {
+    grid-area: span 1 / span 2;
+  }
+
+  /* Mask */
+  .four {
+    grid-area: span 1 / span 2;
+  }
+
+  /* Summon */
+  .five {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Skeletons */
+  .six {
+    grid-area: span 1 / span 2;
+  }
+
+  /* Makeup */
+  .seven {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Lantern */
+  .eight {
+    grid-area: span 1 / span 2;
+  }
+
+  /* Pumpkin head */
+  .nine {
+    grid-area: span 1 / span 2;
+  }
+
+  /* Ghost */
+  .ten {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Scary */
+  .eleven {
+    grid-area: span 1 / span 3;
+  }
+
+  /* Rat */
+  .twelve {
+    grid-area: span 1 / span 2;
+  }
+
+  /* Dead  */
+  .thirteen {
+    grid-area: span 1 / span 2;
+  }
+}
+
+/* Mobile mode   */
+@media screen and (max-width: 480px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* Candles */
+  .one {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Moon  */
+  .two {
+    grid-area: span 1 / span 1;
+  }
+
+  /* House */
+  .three {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Mask */
+  .four {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Summon */
+  .five {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Skeletons */
+  .six {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Makeup */
+  .seven {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Lantern */
+  .eight {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Pumpkin head */
+  .nine {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Ghost */
+  .ten {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Scary */
+  .eleven {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Rat */
+  .twelve {
+    grid-area: span 1 / span 1;
+  }
+
+  /* Dead  */
+  .thirteen {
+    grid-area: span 1 / span 1;
+  }
+}
